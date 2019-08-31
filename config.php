@@ -1,39 +1,21 @@
 <?php
-/**
- * Configuração geral
- */
+define('ABSPATH', dirname(__FILE__));
 
-// Caminho para a raiz
-define( 'ABSPATH', dirname( __FILE__ ) );
+define('UP_ABSPATH', ABSPATH . '/views/_uploads');
 
-// Caminho para a pasta de uploads
-define( 'UP_ABSPATH', ABSPATH . '/views/_uploads' );
+define('HOME_URL', 'http://127.0.0.1/Cursos/crud');
 
-// URL da home
-define( 'HOME_URI', 'http://127.0.0.1/Cursos/crud/' );
+define('HOSTNAME', 'localhost');
 
-// Nome do host da base de dados
-define( 'HOSTNAME', 'localhost' );
+define('DB_NAME', 'tutsup');
 
-// Nome do DB
-define( 'DB_NAME', 'tutsup' );
+define('DB_USER', 'root');
 
-// Usuário do DB
-define( 'DB_USER', 'root' );
+define('DB_PASSWORD', '');
 
-// Senha do DB
-define( 'DB_PASSWORD', '' );
+define('DB_CHARSET', 'utf8');
 
-// Charset da conexão PDO
-define( 'DB_CHARSET', 'utf8' );
+define('DEBUG', 'true');
 
-// Se você estiver desenvolvendo, modifique o valor para true
-define( 'DEBUG', true );
-
-/**
- * Não edite daqui em diante
- */
-
-// Carrega o loader, que vai carregar a aplicação inteira
 require_once ABSPATH . '/loader.php';
 ?>
